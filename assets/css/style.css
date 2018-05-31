@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/light-grey-terrazzo.png");
+    position: relative;
 }
 
 h1, h2, h3 {
@@ -21,6 +22,30 @@ h1 {
     border: 1px solid lightgrey;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.header-content {
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.header-menu {
+    right: 0px;
+    float: right;
+}
+
+.header-content h1 {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 15px;
+    float: left;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .prof-image {
@@ -62,7 +87,7 @@ ul.navbar-nav {
     height: 60px;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     width: 100%;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -75,4 +100,58 @@ ul.navbar-nav {
     margin-bottom: 0;
     height: 100%;
     padding-top: 25px;
+}
+
+
+button {
+    background-color: #4aaaa5;
+    color: white;
+    border-width: 0;
+    padding: 10px;
+    width: 80px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul.header-menu a {
+    float: left;
+    padding: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+}
+
+ul.header-menu a:hover {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+span.portfolio-images {
+    position: relative;
+}
+
+span.portfolio-images img {
+    height: 150px;
+    width: 170px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+span.portfolio-images span {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
+    width: 130px;
+    top: -90;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+}
+
+@media screen and (max-width: 768) {
+    .shrunken-menu {
+        display: block;
+    }
 }
