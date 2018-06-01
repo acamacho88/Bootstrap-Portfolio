@@ -7,8 +7,11 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="navbar-brand"><h1>Alex Camacho</h1></div>         
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="navbar-brand"><h1>Alex Camacho</h1></div>    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>     
+            <div class="collapse navbar-collapse justify-content-end" id="menuItems">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
@@ -22,39 +25,58 @@
                 </ul>
             </div>
         </nav>
-        <section id="main-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="section-header">About Me</h1>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <section id="main-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="section-header">About Me</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="prof-image img-fluid" src="assets/images/IMG_1142.JPG">
+                                </div>
+                                <div class="col-md-9">
+                                    <p>
+                                        I was born in Georgia, grew up in south New Jersey. I took up an interest in science and physics in particular, and after graduating high school, I attended college in Boston and graduated with a degree in Physics, specifically Astrophysics.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>
+                                        After graduating, I moved to the bay area where I had a job in pulsed power science, and then my current job at a San Francisco tech company. I'm a tier 3 support agent and have traveled to Seattle and Israel for work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>
+                                        I was raised on rock music and videogames, and have played the guitar since my senior year of high school. I also am an obsessive Monty Python fan and have taken a recent interest in history, particularly of the first world war (100 years ago today!). As a party trick, I can tell you who the president was any year after 1788.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="row">
-                    <div class="col-md-2">
-                        <img class="prof-image" src="assets/images/IMG_1142.JPG">
-                    </div>
-                    <div class="col-md-10">
-                        <p>
-                            I was born in Georgia, grew up in south New Jersey. I took up an interest in science and physics in particular, and after graduating high school, I attended college in Boston and graduated with a degree in Physics, specifically Astrophysics.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            After graduating, I moved to the bay area where I had a job in pulsed power science, and then my current job at a San Francisco tech company. I'm a tier 3 support agent and have traveled to Seattle and Israel for work.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            I was raised on rock music and videogames, and have played the guitar since my senior year of high school. I also am an obsessive Monty Python fan and have taken a recent interest in history, particularly of the first world war (100 years ago today!). As a party trick, I can tell you who the president was any year after 1788.
-                        </p>
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div>
+                            <a href="index.html">About</a>
+                        </div>
+                        <div>
+                            <a href="portfolio.html">Portfolio</a>
+                        </div>
+                        <div>
+                            <a href="contact.html">Contact</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <footer class="footer">
             <div class="container">
                 <p>Copyright 2018</p>

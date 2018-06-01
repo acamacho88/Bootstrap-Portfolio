@@ -8,7 +8,10 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="navbar-brand"><h1>Alex Camacho</h1></div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>     
+            <div class="collapse navbar-collapse justify-content-end" id="menuItems">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About</a>
@@ -22,24 +25,43 @@
                 </ul>
             </div>
         </nav>
-        <section id="main-section">
-            <h1 class="section-header">Portfolio</h1>
-            <span class="portfolio-images">
-                <img src="assets/images/coconuts.jpg"><span>Coconut delivery</span>
-            </span>
-            <span class="portfolio-images">
-                <img src="assets/images/lespaul.jpg"><span>Guitar abilities</span>
-            </span>
-            <span class="portfolio-images">
-                <img src="assets/images/minority-report.jpg"><span>Sci-fi collection</span>
-            </span>
-            <span class="portfolio-images">
-                <img src="assets/images/pierce.jpg"><span>Presidential trivia</span>
-            </span>
-            <span class="portfolio-images">
-                <img src="assets/images/solar_system.jpg"><span>Astronomy facts</span>
-            </span>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <section id="main-section">
+                        <h1 class="section-header">Portfolio</h1>
+                        <span class="portfolio-images">
+                            <img class="img-fluid" src="assets/images/coconuts.jpg"><span>Coconut delivery</span>
+                        </span>
+                        <span class="portfolio-images">
+                            <img class="img-fluid" src="assets/images/lespaul.jpg"><span>Guitar abilities</span>
+                        </span>
+                        <span class="portfolio-images">
+                            <img class="img-fluid" src="assets/images/minority-report.jpg"><span>Sci-fi collection</span>
+                        </span>
+                        <span class="portfolio-images">
+                            <img class="img-fluid" src="assets/images/pierce.jpg"><span>Presidential trivia</span>
+                        </span>
+                        <span class="portfolio-images">
+                            <img class="img-fluid" src="assets/images/solar_system.jpg"><span>Astronomy facts</span>
+                        </span>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div>
+                            <a href="index.html">About</a>
+                        </div>
+                        <div>
+                            <a href="portfolio.html">Portfolio</a>
+                        </div>
+                        <div>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="container">
                 <p>Copyright 2018</p>

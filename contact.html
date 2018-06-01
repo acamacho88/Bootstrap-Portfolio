@@ -8,7 +8,10 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="navbar-brand"><h1>Alex Camacho</h1></div>         
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>     
+            <div class="collapse navbar-collapse justify-content-end" id="menuItems">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
@@ -22,21 +25,40 @@
                 </ul>
             </div>
         </nav>
-        <section id="main-section">
-            <div class="contact-form">
-                <h1 class="section-header">Contact</h1>
-                <form action="/submit-contact-form">
-                    <p>Name</p>
-                    <input type="text" placeholder="John Smith">
-                    <p>Email</p>
-                    <input type="text" placeholder="example@gmail.com">
-                    <p>Message</p>
-                    <textarea rows="12"></textarea>
-                    <br>
-                    <button type="submit">Submit</button>
-                </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <section id="main-section">
+                        <div class="contact-form">
+                            <h1 class="section-header">Contact</h1>
+                            <form action="/submit-contact-form">
+                                <p>Name</p>
+                                <input type="text" placeholder="John Smith">
+                                <p>Email</p>
+                                <input type="text" placeholder="example@gmail.com">
+                                <p>Message</p>
+                                <textarea rows="12"></textarea>
+                                <br>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div>
+                            <a href="index.html">About</a>
+                        </div>
+                        <div>
+                            <a href="portfolio.html">Portfolio</a>
+                        </div>
+                        <div>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
         <footer class="footer">
             <div class="container">
                 <p>Copyright 2018</p>
